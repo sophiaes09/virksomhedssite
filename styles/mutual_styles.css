@@ -9,6 +9,34 @@ img {
   display: block;
 }
 
+/** fonts/overskrifter **/
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  padding: 1.5rem;
+}
+h2 {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p2 {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 /*******burgermenu********/
 header {
   display: flex;
@@ -48,11 +76,64 @@ header ul li a:hover {
   left: 0;
 }
 
-@media (max-width: 800px) {
+main {
+}
+
+.main_tekst {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 0;
+}
+
+/*******Forside********/
+.herovideo {
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+/*******Footer******/
+footer {
+  background-color: #554634;
+}
+
+.logos {
+  display: flex;
+  cursor: pointer;
+  padding-bottom: 2rem;
+  position: static;
+  top: 0;
+  left: 0;
+  width: 214px;
+  height: auto;
+  gap: 1rem;
+}
+
+.logos a:hover {
+  filter: brightness(7);
+  transition: transform 0.3s ease;
+}
+
+.find_os {
+  padding: 2rem;
+}
+
+.footer_tekst {
+  padding-left: 2rem;
+  padding-bottom: 12rem;
+}
+
+@media (max-width: 600px) {
   header {
     justify-content: space-between;
   }
 
+  /*skal gøres klikbar*/
   .burger-menu {
     display: flex;
     flex-direction: column;
@@ -94,19 +175,9 @@ header ul li a:hover {
   #menuList li {
     text-align: right;
   }
-}
-/*******Forside********/
-.herovideo {
-  width: 100%;
-  height: auto;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
 
-/*******Footer******/
-
-footer {
-  background-color: #554634;
-  padding: 10rem;
+  /*footer*/
+  .footer_tekst {
+    padding-bottom: 4rem;
+  }
 }
