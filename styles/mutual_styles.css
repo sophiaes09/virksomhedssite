@@ -19,22 +19,25 @@ h1 {
   margin: 0 auto;
   display: block;
   padding: 1.5rem;
+  color: #26231f;
 }
 h2 {
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
+  color: #26231f;
 }
 p {
   font-family: "Inria Serif", serif;
   font-weight: 400;
   font-style: normal;
+  color: #26231f;
 }
-
 p2 {
   font-family: "Inria Serif", serif;
   font-weight: 700;
   font-style: normal;
+  color: #26231f;
 }
 
 /*******burgermenu********/
@@ -76,7 +79,13 @@ header ul li a:hover {
   left: 0;
 }
 
-main {
+/*******Video********/
+.herovideo {
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 
 .main_tekst {
@@ -88,13 +97,39 @@ main {
   padding-top: 0;
 }
 
-/*******Forside********/
-.herovideo {
-  width: 100%;
-  height: auto;
-  top: 0;
-  left: 0;
-  object-fit: cover;
+/***knap****/
+.grid_knap {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 0;
+}
+.knap {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #26231f;
+  background-color: #73965d;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 30px;
+}
+/***hover***/
+.knap a:hover {
+  background-color: #b3c5a8;
+}
+
+.rist_bager {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 0;
 }
 
 /*******Footer******/
@@ -174,6 +209,16 @@ footer {
 
   #menuList li {
     text-align: right;
+  }
+
+  /*rasteri&bageri*/
+  .rist_bager {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-top: 0;
   }
 
   /*footer*/
