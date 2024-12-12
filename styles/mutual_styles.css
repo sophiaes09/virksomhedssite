@@ -9,6 +9,16 @@ img {
   display: block;
 }
 
+/****variable****/
+:root {
+  --d_brown: #26231f;
+  --l_brown: #554634;
+  --d_green: #73965d;
+  --l_green: #b3c5a8;
+  --cream: #ede8d8;
+  --navy_blue: #02153b;
+}
+
 /** fonts/overskrifter **/
 h1 {
   font-family: "Roboto", sans-serif;
@@ -19,25 +29,25 @@ h1 {
   margin: 0 auto;
   display: block;
   padding: 1.5rem;
-  color: #26231f;
+  color: var(--dark_brown);
 }
 h2 {
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
-  color: #26231f;
+  color: var(--dark_brown);
 }
 p {
   font-family: "Inria Serif", serif;
   font-weight: 400;
   font-style: normal;
-  color: #26231f;
+  color: var(--dark_brown);
 }
-p2 {
+h3 {
   font-family: "Inria Serif", serif;
   font-weight: 700;
   font-style: normal;
-  color: #26231f;
+  color: var(--dark_brown);
 }
 
 /*******burgermenu********/
@@ -65,12 +75,12 @@ header {
 }
 header ul li a {
   text-decoration: none;
-  color: black;
+  color: var(--cream);
   font-size: 200%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 header ul li a:hover {
-  color: rgb(210, 170, 50);
+  color: var(--d_green) (210, 170, 50);
 }
 .logo {
   margin-right: auto;
@@ -97,7 +107,7 @@ header ul li a:hover {
   padding-top: 0;
 }
 
-/***knap****/
+/***knapper****/
 .grid_knap {
   display: flex;
   justify-content: center;
@@ -110,17 +120,19 @@ header ul li a:hover {
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
-  color: #26231f;
-  background-color: #73965d;
+  color: var(--cream);
+  background-color: var(--navy_blue);
   text-align: center;
   padding: 1rem;
   cursor: pointer;
   text-decoration: none;
-  border-radius: 30px;
+  /*border-radius: 30px;*vent og se hvad prototype siger*/
 }
 /***hover***/
-.knap a:hover {
-  background-color: #b3c5a8;
+.grid_knap a:hover {
+  background-color: var(--cream);
+  color: var(--navy_blue);
+  transition: color 1s;
 }
 
 .rist_bager {
@@ -134,7 +146,7 @@ header ul li a:hover {
 
 /*******Footer******/
 footer {
-  background-color: #554634;
+  background-color: var(--l_brown);
 }
 
 .logos {
@@ -185,7 +197,7 @@ footer {
   .burger-menu span {
     display: block;
     height: 3px;
-    background-color: black;
+    background-color: var(--cream);
     border-radius: 2px;
     transition: 0.3s;
   }
@@ -196,11 +208,11 @@ footer {
     position: absolute;
     top: 50px;
     right: 15px;
-    background: white;
-    border: 1px solid #ccc;
+    background-color: var(--l_brown);
+    border: 1px solid var(--cream);
     padding: 10px;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--d_brown) (0, 0, 0, 0.1);
   }
 
   #menuList.active {
