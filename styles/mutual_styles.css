@@ -183,7 +183,7 @@ footer {
   padding-top: 25rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   header {
     justify-content: space-between;
   }
@@ -213,14 +213,16 @@ footer {
   #menuList {
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 50px;
-    right: 15px;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Gør menuen positioneret i hele vinduet */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Fuld bredde */
+    height: 100vh; /* Fuld højde */
     background-color: var(--l_brown);
-    border: 1px solid var(--cream);
-    padding: 10px;
     z-index: 1000;
-    box-shadow: 0 4px 6px #73965d (0, 0, 0, 0.1);
+    gap: 20px; /* Mellemrum mellem elementer */
   }
 
   #menuList.active {
@@ -228,7 +230,7 @@ footer {
   }
 
   #menuList li {
-    text-align: right;
+    text-align: center;
   }
 
   /*rasteri&bageri*/
