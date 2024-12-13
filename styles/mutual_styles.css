@@ -66,7 +66,8 @@ header {
   padding: 0;
   position: absolute;
   /* position: fixed; */
-  top: 0;
+  top: 15px;
+  right: 10px;
 }
 
 .burger-menu {
@@ -86,7 +87,8 @@ header ul li a:hover {
   margin-right: auto;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10px;
+  width: 60px;
 }
 
 /*******Video********/
