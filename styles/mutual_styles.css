@@ -216,7 +216,7 @@ footer {
     justify-content: center;
     align-items: center;
     position: fixed; /* Gør menuen positioneret i hele vinduet */
-    top: 0;
+    top: 15;
     left: 0;
     width: 100vw; /* Fuld bredde */
     height: 100vh; /* Fuld højde */
