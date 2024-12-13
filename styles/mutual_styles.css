@@ -148,6 +148,7 @@ header ul li a:hover {
 footer {
   background-color: var(--l_brown);
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .logos {
@@ -177,7 +178,9 @@ footer {
 }
 
 .lottie {
-  grid-column: 2;
+  grid-column: 3;
+  justify-self: end;
+  padding-top: 25rem;
 }
 
 @media (max-width: 600px) {
