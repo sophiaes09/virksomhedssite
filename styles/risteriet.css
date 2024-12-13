@@ -1,0 +1,18 @@
+.knap_pil {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--cream);
+  background-color: var(--navy_blue);
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/***hover***/
+.knap_pil a:hover {
+  background-color: var(--cream);
+  color: var(--navy_blue);
+  transition: color 1s;
+}

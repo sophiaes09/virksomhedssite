@@ -91,6 +91,33 @@ header ul li a:hover {
   width: 60px;
 }
 
+/*Logo Hover Effect*jeg fik lidt hjælp fra chatgpt til at få hover til at virke*/
+
+.logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.logo .base-image {
+  opacity: 1;
+}
+
+.logo .hover-image {
+  opacity: 0;
+}
+
+.logo:hover .base-image {
+  opacity: 0;
+}
+
+.logo:hover .hover-image {
+  opacity: 1;
+}
+
 /*******Video********/
 .herovideo {
   width: 100%;
@@ -107,6 +134,7 @@ header ul li a:hover {
   margin: 0 auto;
   padding: 2rem;
   padding-top: 0;
+  background-image: url("/full/path/to/your/image/mokkariet_logo_d_brown.png");
 }
 
 /***knapper****/
@@ -144,6 +172,12 @@ header ul li a:hover {
   margin: 0 auto;
   padding: 2rem;
   padding-top: 0;
+}
+
+/**Tariqs profil**/
+.green {
+  background-color: var(--l_green);
+  padding: 1rem;
 }
 
 /*******Footer******/
@@ -218,7 +252,7 @@ footer {
     justify-content: center;
     align-items: center;
     position: fixed; /* Gør menuen positioneret i hele vinduet */
-    top: 15;
+    top: 0;
     left: 0;
     width: 100vw; /* Fuld bredde */
     height: 100vh; /* Fuld højde */
@@ -248,7 +282,5 @@ footer {
   /*footer*/
   .footer_tekst {
     padding-bottom: 4rem;
-  }
-  .lottie {
   }
 }
