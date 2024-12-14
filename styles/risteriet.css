@@ -1,18 +1,92 @@
-.knap_pil {
+.risteriet {
+  padding-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.billede_v {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+}
+.kaffe_tekst_h {
+  margin-left: 1rem;
+  padding-top: 1rem;
+}
+
+.billede_h {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+}
+.kaffe_tekst_v {
+  margin-right: 1rem;
+  padding-top: 1rem;
+}
+
+/***knap****/
+/*skjuler de ændre pånær step 1 som er aktiv* fik lidt hjælp fra chatgpt, især til JS, så knappen er funktionel og klikbar*/
+.step-container {
+  display: none;
+  justify-content: center; /**  skal ændres til end i desktop**/
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 0;
+}
+
+.step-container.active {
+  display: block;
+  justify-content: center; /**  skal ændres til end i desktop**/
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 0;
+}
+
+/*style*/
+.knap-pil {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 0;
+}
+
+.knap-pil button {
   font-family: "Poppins", serif;
   font-weight: 400;
+  font-size: 2rem;
   font-style: normal;
   color: var(--cream);
   background-color: var(--navy_blue);
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
   cursor: pointer;
-  text-decoration: none;
 }
-
-/***hover***/
-.knap_pil a:hover {
+/*hover*/
+.knap-pil button:hover {
   background-color: var(--cream);
   color: var(--navy_blue);
   transition: color 1s;
+}
+
+/******  Desktop  *******/
+@media (min-width: 801px) {
+  .risteriet {
+    padding-top: 10rem;
+    margin-bottom: 15rem;
+  }
+  .kaffe_tekst_h {
+    margin-left: 1rem;
+    padding-top: 5rem;
+  }
+  .kaffe_tekst_v {
+    margin-left: 1rem;
+    padding-top: 5rem;
+  }
+
+  .knap-pil {
+    justify-content: flex-end; /*flytter knap til højre*/
+  }
 }

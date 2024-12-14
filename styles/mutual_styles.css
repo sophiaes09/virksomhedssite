@@ -134,7 +134,6 @@ header ul li a:hover {
   margin: 0 auto;
   padding: 2rem;
   padding-top: 0;
-  background-image: url("/full/path/to/your/image/mokkariet_logo_d_brown.png");
 }
 
 /***knapper****/
@@ -178,6 +177,8 @@ header ul li a:hover {
 .green {
   background-color: var(--l_green);
   padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /*******Footer******/
