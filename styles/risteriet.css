@@ -1,4 +1,8 @@
-.risteriet {
+.header_r {
+  background-color: var(--l_brown);
+  padding: 2rem;
+}
+.risteriet_main {
   padding-top: 5rem;
   margin-bottom: 5rem;
 }
