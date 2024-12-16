@@ -188,6 +188,11 @@ header ul li a:hover {
   text-decoration: none;
 }
 
+.img_forside {
+  height: 80%;
+  width: 95%;
+}
+
 /*** teksten oven på billederne***/
 .overlay {
   position: absolute;
@@ -368,6 +373,13 @@ footer {
 
   .risteriet,
   .bageriet {
+    margin-bottom: 0;
+  }
+
+  .img_tarik {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 2rem;
     margin-bottom: 0;
   }
 
