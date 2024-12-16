@@ -43,6 +43,11 @@ header ul li a:hover {
 .logo:hover .hover-image {
   opacity: 0;
 }
+
+.header_r {
+  padding: 1rem;
+  background-color: var(--cream);
+}
 /*** header ***/
 
 /***************main*********/
@@ -51,7 +56,22 @@ header ul li a:hover {
 }
 
 main {
-  background-color: #ede8d8;
+  background-color: var(--cream);
 }
 
+/**********menukort*******/
+.menucards img {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.menu_tekst {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/**********menukort*******/
 /***************main*********/
