@@ -62,7 +62,7 @@ header ul li a:hover {
 }
 
 .risteriet_main {
-  padding-top: 5rem;
+  padding-top: 2rem;
   margin-bottom: 5rem;
 }
 
@@ -136,6 +136,11 @@ header ul li a:hover {
 
 /******  Desktop  *******/
 @media (min-width: 801px) {
+  .img_size {
+    height: 85%;
+    width: 60%;
+  }
+
   .risteriet {
     padding-top: 10rem;
     margin-bottom: 15rem;

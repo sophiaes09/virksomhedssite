@@ -246,7 +246,21 @@ header ul li a:hover {
   background-color: var(--l_green);
   padding: 1rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
+}
+
+.img_tarik {
+  width: 85%;
+  padding-left: 4rem;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 2rem;
 }
 
 /*******Footer******/
