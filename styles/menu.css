@@ -46,7 +46,12 @@ header ul li a:hover {
 /*** header ***/
 
 /***************main*********/
+.menu_main {
+  padding-top: 2rem;
+}
+
 main {
   background-color: #ede8d8;
 }
+
 /***************main*********/
