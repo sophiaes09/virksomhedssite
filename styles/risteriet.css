@@ -1,7 +1,53 @@
+/*** omvendt hover effekts ***/
+header ul li a {
+  text-decoration: none;
+  color: var(--d_brown);
+  font-size: 200%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header ul li a:hover {
+  color: var(--cream);
+}
+
+/*Logo* jeg fik lidt hjælp fra chatgpt til at få hover til at virke*/
+.logo {
+  margin-right: auto;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 60px;
+}
+
+.logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.logo .base-image {
+  opacity: 0;
+}
+
+.logo .hover-image {
+  opacity: 1;
+}
+
+.logo:hover .base-image {
+  opacity: 1;
+}
+
+.logo:hover .hover-image {
+  opacity: 0;
+}
+/***************************************************************************/
+
 .header_r {
-  background-color: var(--l_brown);
   padding: 2rem;
 }
+
 .risteriet_main {
   padding-top: 5rem;
   margin-bottom: 5rem;
