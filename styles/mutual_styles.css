@@ -77,8 +77,8 @@ header {
 header ul li a {
   text-decoration: none;
   color: var(--cream);
-  font-size: 200%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 125%;
+  font-family: "Poppins", serif;
 }
 header ul li a:hover {
   color: var(--d_brown);

@@ -2,7 +2,6 @@
 header ul li a {
   text-decoration: none;
   color: var(--d_brown);
-  font-size: 200%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 header ul li a:hover {
@@ -42,6 +41,20 @@ header ul li a:hover {
 .logo:hover .hover-image {
   opacity: 0;
 }
+
+/**** Burger menu *****/
+.burger-menu span {
+  display: block;
+  height: 3px;
+  background-color: var(--d_brown);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.burger-menu:hover span {
+  background-color: var(--cream);
+}
+
 /***************************************************************************/
 
 .header_r {
