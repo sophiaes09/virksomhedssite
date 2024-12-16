@@ -44,3 +44,9 @@ header ul li a:hover {
   opacity: 0;
 }
 /*** header ***/
+
+/***************main*********/
+main {
+  background-color: #ede8d8;
+}
+/***************main*********/
