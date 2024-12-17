@@ -1,0 +1,214 @@
+/*** omvendt hover effekts ***/
+header ul li a {
+  text-decoration: none;
+  color: var(--d_brown);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header ul li a:hover {
+  color: var(--cream);
+}
+
+/*Logo* jeg fik lidt hjælp fra chatgpt til at få hover til at virke*/
+.logo {
+  margin-right: auto;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 60px;
+}
+
+.logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.logo .base-image {
+  opacity: 0;
+}
+
+.logo .hover-image {
+  opacity: 1;
+}
+
+.logo:hover .base-image {
+  opacity: 1;
+}
+
+.logo:hover .hover-image {
+  opacity: 0;
+}
+
+/**** Burger menu *****/
+.burger-menu span {
+  display: block;
+  height: 3px;
+  background-color: var(--d_brown);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.burger-menu:hover span {
+  background-color: var(--cream);
+}
+
+/***************************************************************************/
+main {
+  margin-top: 6rem;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kaffebaren_billede1 {
+  margin-bottom: 3rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kaffebaren_billede2 {
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kaffebaren_billede3 {
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.overskrift1_kaffebaren {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.tekst1_kaffebaren {
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.tekst2_kaffebaren {
+  margin-bottom: 3.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/****** forskellige størrelser på skærm ****/
+@media (min-width: 700px) {
+  .main {
+    margin-top: 3rem;
+  }
+  .overskrift1_kaffebaren {
+    margin-bottom: 2rem;
+  }
+  .kaffebaren_billede1 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  .kaffebaren_billede2 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  .kaffebaren_billede3 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    grid-area: text;
+  }
+  .tekst1_kaffebaren {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    align-self: center;
+  }
+
+  .tekst2_kaffebaren {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    align-self: center;
+    grid-area: image;
+  }
+
+  .grid1_kaffebaren {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .grid2_kaffebaren {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-template-areas: "image text";
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    margin-top: 10rem;
+  }
+  .overskrift1_kaffebaren {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .kaffebaren_billede1 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .kaffebaren_billede2 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .kaffebaren_billede3 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    grid-area: text;
+  }
+  .tekst1_kaffebaren {
+    margin-left: 4rem;
+    margin-right: 9rem;
+    align-self: center;
+  }
+
+  .tekst2_kaffebaren {
+    margin-left: 9rem;
+    margin-right: 4rem;
+    align-self: center;
+    grid-area: image;
+  }
+
+  .grid1_kaffebaren {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .grid2_kaffebaren {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-template-areas: "image text";
+    margin-bottom: 3rem;
+  }
+}

@@ -11,13 +11,58 @@
         rel="stylesheet">
     <title>Mokkariet</title>
     <link rel="stylesheet" href="styles/mutual_styles.css">
+    <link rel="stylesheet" href="styles/kontakt.css">
+
 </head>
 
 <body>
-    <header></header>
+    <header class="header_r">
+        <div class="burger-menu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a class="logo" href="index.html">
+            <img src="img/logos/mokkariet_logo_cream.png" alt="logo" class="base-image">
+            <img src="img/logos/mokkariet_logo_d_brown.png" alt="hover logo" class="hover-image"></a>
+
+        <ul id="menuList">
+            <li class="Risteriet"><a href="risteriet.html">RISTERIET</a></li>
+            <li class="Bageriet"><a href="bageriet.html">BAGERIET</a></li>
+            <li class="Kaffebaren"><a href="kaffebaren.html">KAFFEBAREN</a></li>
+            <li class="Menu"><a href="menu.html">MENU</a></li>
+            <li class="Kontakt">
+                <a href="kontakt.html">KONTAKT</a>
+                <ul class="dropdown">
+                    <li><a href="kontakt.html">JOBS</a></li>
+                    <li><a href="kontakt2.html">KONTAKT</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </header>
 
 
-    <main></main>
+    <main>
+        <div class="grid1_kontakt">
+            <div class="container1">
+                <img class="billede_1_kontakt" src="img/kontakt_billede1.png" alt="billede1">
+            </div>
+
+            <div class="container2">
+                <h2 class="h2_kontakt">Måske er det dig, vi står og mangler?</h2>
+                <p>Det er ikke nogen hemmelighed, at vi får et hav af ansøgninger på Mokkariet. MEN vi vil altid gerne
+                    modtage
+                    nye
+                    ansøgninger, for man ved aldrig, hvornår der er brug for nye gode kollegaer og hænder bag
+                    kaffebaren.
+                    Derfor
+                    er du altid
+                    velkommen til at sende os en
+                    ansøgning på <b>job@mokkariet.dk</b></p>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <div class="find_os">
@@ -45,5 +90,7 @@
             </p>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
+
+</html>
