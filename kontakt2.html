@@ -27,34 +27,57 @@
             <img src="img/logos/mokkariet_logo_d_brown.png" alt="hover logo" class="hover-image"></a>
 
         <ul id="menuList">
-            <li class="Risteriet"><a href="risteriet.html">RISTERET</a></li>
+            <li class="Risteriet"><a href="risteriet.html">RISTERIET</a></li>
             <li class="Bageriet"><a href="bageriet.html">BAGERIET</a></li>
             <li class="Kaffebaren"><a href="kaffebaren.html">KAFFEBAREN</a></li>
             <li class="Menu"><a href="menu.html">MENU</a></li>
-            <li class="Kontakt"><a href="kontakt.html">KONTAKT</a></li>
+            <li class="Kontakt">
+                <a href="kontakt.html">KONTAKT</a>
+                <ul class="dropdown">
+                    <li><a href="kontakt.html">JOBS</a></li>
+                    <li><a href="kontakt2.html">KONTAKT</a></li>
+                </ul>
+            </li>
+
         </ul>
     </header>
 
     <main>
-        <div class="container_form">
-            <h1>KONTAKT OS!</h1>
-            <p>Udfyld kontakt formen nedenfor, hvsi du har et spørgsmål eller andre henvendelser til os.</p>
+        <section class="section-contact">
+            <div class="container_form">
+                <h1>KONTAKT OS!</h1>
+                <p>Udfyld kontakt formen nedenfor, hvsi du har et spørgsmål eller andre henvendelser til os.</p>
 
-            <form action="">
-                <div class="form-group">
-                    <label for="firstname">Fornavn*</label>
-                    <input type="text" name="firstname" id="firstname" required class="form-element">
-                </div>
-                <div class="form-group">
-                    <label for="lastname">Efternavn*</label>
-                    <input type="text" name="lastname" id="lastname" required class="form-element">
-                </div>
-                <div class="form-group">
-                    <label for="Email">Email*</label>
-                    <input type="email" name="email" id="email" required class="form-element">
-                </div>
-            </form>
-        </div>
+                <form action="">
+                    <div class="form-group">
+                        <label for="firstname">Fornavn*</label>
+                        <input type="text" name="firstname" id="firstname" required class="form-element">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Efternavn*</label>
+                        <input type="text" name="lastname" id="lastname" required class="form-element">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email*</label>
+                        <input type="email" name="email" id="email" required class="form-element">
+                    </div>
+                    <div class="form-group">
+                        <label for="emne">Emne*</label>
+                        <input type="text" name="emne" id="emne" required class="form-element">
+                    </div>
+
+                    <div class="form-group full">
+                        <label for="message">Besked*</label>
+                        <textarea name="message" id="message" class="form-element"></textarea>
+                    </div>
+
+                    <div class="submit-group">
+                        <input type="submit" value="SEND BESKED">
+
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>

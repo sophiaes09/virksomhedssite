@@ -56,6 +56,54 @@ header ul li a:hover {
 }
 
 /***************************************************************************/
+/* Dropdown-menu styling */
+ul#menuList li {
+  position: relative; /* Nødvendig for at placere dropdown korrekt */
+}
+
+ul#menuList li .dropdown {
+  display: none; /* Skjules som standard */
+  position: absolute;
+  top: 100%; /* Dropdown starter under "KONTAKT" */
+  left: 50%; /* Centrering */
+  transform: translateX(-50%); /* Centrer dropdown horisontalt */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Centrer tekst inde i dropdown */
+}
+
+ul#menuList li .dropdown li {
+  margin: 5px 0; /* Lidt mellemrum mellem links */
+}
+
+ul#menuList li .dropdown li a {
+  display: block;
+  text-decoration: none;
+  color: var(--cream); /* Samme farve som øvrige menupunkter */
+  font-family: "Poppins", serif;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+ul#menuList li .dropdown li a:hover {
+  color: var(--d_brown); /* Hover-effekt matcher hovedmenu */
+}
+
+/* Hover for at vise dropdown */
+ul#menuList li:hover .dropdown {
+  display: block;
+}
+
+/* Ændring af burger-menu farve */
+.burger-menu span {
+  background-color: var(--d_brown); /* Farven ændret til mørk brun */
+}
+
+.burger-menu:hover span {
+  background-color: var(--cream); /* Lysere brun ved hover */
+}
+/*****************************************/
 main {
   margin-top: 7rem;
 }
@@ -103,5 +151,120 @@ main {
   }
   .container2 {
     margin-top: 0.5rem;
+  }
+}
+
+/******************** taget fra youtube  - https://www.youtube.com/watch?v=YBUMHRL1fmo ***************/
+
+.section-contact {
+  min-height: 100vh;
+  padding-bottom: 100px;
+
+  .container_form {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    @media (min-width: 768px) {
+      padding-left: 64px;
+      padding-right: 64px;
+    }
+
+    @media (min-width: 1024px) {
+      padding-left: 128px;
+      padding-right: 128px;
+    }
+
+    h1 {
+      color: #000000;
+      font-size: 36px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    p {
+      color: #000000;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 16px;
+      background-color: #fff;
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .form-group {
+        &.full {
+          grid-column: 1 / -1;
+        }
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+          color: #000000;
+          font-size: 14px;
+        }
+
+        .form-element {
+          appearance: none;
+          outline: none;
+          border: none;
+
+          display: block;
+          width: 100%;
+
+          border-radius: 8px;
+          padding: 12px 16px;
+          background-color: #f3f3f3;
+          transition: 0.4s;
+
+          &:focus {
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+          }
+        }
+
+        textarea {
+          resize: none;
+          min-height: 100px;
+        }
+      }
+
+      .submit-group {
+        grid-column: 1 / -1;
+        text-align: right;
+
+        input[type="submit"] {
+          appearance: none;
+          border: none;
+          outline: none;
+          background: none;
+
+          padding: 12px 16px;
+          border-radius: 8px;
+          color: var(--cream);
+          background-color: var(--navy_blue);
+          cursor: pointer;
+          transition: 0.4s;
+
+          &:hover {
+            color: var(--navy_blue);
+            background-color: var(--cream);
+          }
+        }
+      }
+    }
   }
 }
