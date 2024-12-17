@@ -242,16 +242,6 @@ header ul li a:hover {
   text-decoration: none;
 }
 
-.tekst_overlay {
-  position: relative;
-  bottom: 15%;
-  width: 80%;
-  color: var(--d_brown);
-  text-align: left;
-  padding-left: 1rem;
-  text-decoration: none;
-}
-
 /**Tariqs profil**/
 .green {
   background-color: var(--l_green);
@@ -387,10 +377,6 @@ footer {
     padding-left: 0;
     margin-left: 2rem;
     margin-bottom: 0;
-  }
-
-  .tekst_overlay {
-    width: 90%;
   }
 
   /*footer*/

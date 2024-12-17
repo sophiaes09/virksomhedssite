@@ -105,21 +105,25 @@ header ul li a:hover {
   justify-content: center; /**skal ændres til end i desktop**/
   padding-bottom: 1rem;
   margin: 0 auto;
-  padding: 2rem;
   padding-top: 0;
 }
 
 .step-container.active {
-  display: block;
+  display: block grid;
   justify-content: center; /**skal ændres til end i desktop**/
   padding-bottom: 1rem;
   margin: 0 auto;
-  padding: 2rem;
   padding-top: 0;
 }
 
 .slide_tekst {
   margin: 2rem;
+}
+.img_size_slide {
+  height: 100%;
+  width: 60%;
+  max-width: 360px;
+  max-height: 360px;
 }
 
 /***knap****/
@@ -188,7 +192,7 @@ header ul li a:hover {
 
   .step-container.active {
     display: block flex;
-    justify-content: center; /**skal ændres til end i desktop**/
+    /*justify-content: center; /**skal ændres til end i desktop**/
     padding-bottom: 1rem;
     margin: 0 auto;
     padding: 2rem;
@@ -198,6 +202,8 @@ header ul li a:hover {
   .img_size_slide {
     height: 100%;
     width: 60%;
+    max-width: 360px;
+    max-height: 360px;
   }
 
   .img_size {
