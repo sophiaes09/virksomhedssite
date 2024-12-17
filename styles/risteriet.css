@@ -61,36 +61,48 @@ header ul li a:hover {
   padding: 2rem;
 }
 
+.h2_rist {
+  text-align: center;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+
 .risteriet_main {
-  padding-top: 2rem;
-  margin-bottom: 5rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sektion_rist {
+  margin: 0.5rem;
+  margin-top: 0;
 }
 
 .billede_v {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 2rem;
+  margin-left: 0;
 }
+
 .kaffe_tekst_h {
-  margin-left: 1rem;
-  padding-top: 1rem;
+  margin-right: 0;
 }
 
 .billede_h {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 2rem;
-}
-.kaffe_tekst_v {
-  margin-right: 1rem;
-  padding-top: 1rem;
+  margin-left: 0;
 }
 
-/***knap****/
+.kaffe_tekst_v {
+  padding-top: 0;
+  margin-right: 0;
+}
+
 /*skjuler de ændre pånær step 1 som er aktiv* fik lidt hjælp fra chatgpt, især til JS, så knappen er funktionel og klikbar*/
+
 .step-container {
   display: none;
-  justify-content: center; /**  skal ændres til end i desktop**/
+  justify-content: center; /**skal ændres til end i desktop**/
   padding-bottom: 1rem;
   margin: 0 auto;
   padding: 2rem;
@@ -99,18 +111,22 @@ header ul li a:hover {
 
 .step-container.active {
   display: block;
-  justify-content: center; /**  skal ændres til end i desktop**/
+  justify-content: center; /**skal ændres til end i desktop**/
   padding-bottom: 1rem;
   margin: 0 auto;
   padding: 2rem;
   padding-top: 0;
 }
 
+.slide_tekst {
+  margin: 2rem;
+}
+
+/***knap****/
 /*style*/
 .knap-pil {
   display: flex;
   justify-content: center;
-  padding-bottom: 1rem;
   margin: 0 auto;
   padding: 2rem;
   padding-top: 0;
@@ -124,9 +140,12 @@ header ul li a:hover {
   color: var(--cream);
   background-color: var(--navy_blue);
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
   cursor: pointer;
+  margin: 2rem;
+  border: none;
 }
+
 /*hover*/
 .knap-pil button:hover {
   background-color: var(--cream);
@@ -135,10 +154,55 @@ header ul li a:hover {
 }
 
 /******  Desktop  *******/
-@media (min-width: 801px) {
-  .img_size {
-    height: 85%;
+@media (min-width: 800px) {
+  .risteriet_main {
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .sektion_rist {
+    margin: 6rem;
+    margin-top: 2rem;
+  }
+
+  .billede_v {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 6rem;
+  }
+
+  .kaffe_tekst_h {
+    margin-right: 7rem;
+  }
+
+  .billede_h {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 6rem;
+  }
+
+  .kaffe_tekst_v {
+    padding-top: 5rem;
+    margin-right: 6rem;
+  }
+
+  .step-container.active {
+    display: block flex;
+    justify-content: center; /**skal ændres til end i desktop**/
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-top: 0;
+  }
+
+  .img_size_slide {
+    height: 100%;
     width: 60%;
+  }
+
+  .img_size {
+    height: 95%;
+    width: 80%;
   }
 
   .risteriet {
@@ -156,5 +220,13 @@ header ul li a:hover {
 
   .knap-pil {
     justify-content: flex-end; /*flytter knap til højre*/
+  }
+
+  .knap-pil {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    margin: 0;
+    padding: 0;
   }
 }

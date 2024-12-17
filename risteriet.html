@@ -26,11 +26,17 @@
             <img src="img/logos/mokkariet_logo_d_brown.png" alt="hover logo" class="hover-image"></a>
 
         <ul id="menuList">
-            <li class="Risteriet"><a href="risteriet.html">RISTERET</a></li>
+            <li class="Risteriet"><a href="risteriet.html">RISTERIET</a></li>
             <li class="Bageriet"><a href="bageriet.html">BAGERIET</a></li>
             <li class="Kaffebaren"><a href="kaffebaren.html">KAFFEBAREN</a></li>
             <li class="Menu"><a href="menu.html">MENU</a></li>
-            <li class="Kontakt"><a href="kontakt.html">KONTAKT</a></li>
+            <li class="Kontakt">
+                <a href="kontakt.html">KONTAKT</a>
+                <ul class="dropdown">
+                    <li><a href="kontakt.html">JOBS</a></li>
+                    <li><a href="kontakt2.html">KONTAKT</a></li>
+                </ul>
+            </li>
         </ul>
     </header>
 
@@ -39,79 +45,97 @@
         <div class="main_tekst">
             <h3>Hos Mokkariet får vi ristet og specialfremstillet alle vores bønner hos Copenhagen Roastery</h3>
         </div>
+        <div class="sektion_rist">
+            <div class="billede_v">
+                <img class="img_size" src="img/marie_billeder/kaffe.jpg" alt="Kaffe sække med bønner i">
+                <div class="kaffe_tekst_h">
+                    <p>Kaffen, som du drikker på Mokkariet, er en esprosseblanding bestående af bønner fra tre
+                        kaffefarme i
+                        Brasilien, Kenya og
+                        Guatemala:</p>
+                    <br>
+                    <h3>Datere Coffee Brasil</h3>
+                    <p>(Brasilien): Kaffefarmen blev etableret i 1902 og ligger i Cerrado-regionen i 900-1200 meters
+                        højde.
+                        Farmen beskæftiger over 1000 medarbejdere.</p>
+                </div>
+            </div>
 
-        <div class="billede_v">
-            <img class="img_size" src="img/marie_billeder/kaffe.jpg" alt="Kaffe sække med bønner i">
-            <div class="kaffe_tekst_h">
-                <p>Kaffen, som du drikker på Mokkariet, er en esprosseblanding bestående af bønner fra tre kaffefarme i
-                    Brasilien, Kenya og
-                    Guatemala:</p>
-                <br>
-                <h3>Datere Coffee Brasil</h3>
-                <p>(Brasilien): Kaffefarmen blev etableret i 1902 og ligger i Cerrado-regionen i 900-1200 meters højde.
-                    Farmen beskæftiger over 1000 medarbejdere.</p>
+            <div class="billede_h">
+                <div class="kaffe_tekst_v">
+                    <h3>Ngurueri Factory Murue FCS</h3>
+                    <p>(Kenya): Kaffefarmen ligger i området Embu County og blev etableret i 1971. Farmen ligger i 1760
+                        meters
+                        højde og
+                        beskæftiger 940 medarbejdere.</p>
+                    <br>
+                    <h3>El Guatalon</h3>
+                    <p>(Guatemala): El Guatalon blev etableret i 1985. Farmen ligger i Santa Rosa-regionen i 1800 meters
+                        højde.
+                        16-25
+                        medarbejdere er beskæftiget på farmen.</p>
+                </div>
+                <img class="img_size" src="img/marie_billeder/kaffeb_u.jpg" alt="Kaffebønner der er ublandende">
             </div>
         </div>
-
-        <div class="billede_h">
-            <div class="kaffe_tekst_v">
-                <h3>Ngurueri Factory Murue FCS</h3>
-                <p>(Kenya): Kaffefarmen ligger i området Embu County og blev etableret i 1971. Farmen ligger i 1760
-                    meters
-                    højde og
-                    beskæftiger 940 medarbejdere.</p>
-                <br>
-                <h3>El Guatalon</h3>
-                <p>(Guatemala): El Guatalon blev etableret i 1985. Farmen ligger i Santa Rosa-regionen i 1800 meters
-                    højde.
-                    16-25
-                    medarbejdere er beskæftiget på farmen.</p>
-            </div>
-            <img class="img_size" src="img/marie_billeder/kaffeb_u.jpg" alt="Kaffebønner der er ublandende">
-        </div>
-
         <div class="green">
-            <h2>RISTEPROCESS</h2>
+            <h2 class="h2_rist">RISTEPROCESS</h2>
 
             <div class="step-container active" id="step_1">
-                <img class="img_size" src="img/marie_billeder/rist_1.jpg" alt="step 1">
-                <h3>Step 1</h3>
-                <p>Bønnerne under den første risteproces.</p>
+                <img class="img_size_slide" src="img/marie_billeder/rist_1.jpg" alt="step 1">
+                <div class="slide_tekst">
+                    <h3>Step 1</h3>
+                    <p>Bønnerne under den første risteproces.</p>
+                </div>
+                <div class="knap-pil">
+                    <button class="nextStepButton">→</button>
+                </div>
             </div>
 
+
             <div class="step-container" id="step_2">
-                <img class="img_size" src="img/marie_billeder/rist_2.jpg" alt="step 2">
-                <h3>Step 2</h3>
-                <p>Bønnerne under den anden risteproces.</p>
+                <img class="img_size_slide" src="img/marie_billeder/rist_2.jpg" alt=" step 2">
+                <div class="slide_tekst">
+                    <h3>Step 2</h3>
+                    <p>Bønnerne under den anden risteproces.</p>
+                </div>
+                <div class="knap-pil">
+                    <button class="nextStepButton">→</button>
+                </div>
             </div>
 
             <div class="step-container" id="step_3">
-                <img class="img_size" src="img/marie_billeder/rist_3.jpg" alt="step 3">
-                <h3>Step 3</h3>
-                <p>De færdigristede bønner er klar til at blive leveret, kværnet, brygget og serveret på Mokkariet.</p>
-            </div>
-
-            <div class="knap-pil">
-                <button id="nextStepButton">→</button>
+                <img class="img_size_slide" src="img/marie_billeder/rist_3_1.jpg" alt=" step 3">
+                <div class="slide_tekst">
+                    <h3>Step 3</h3>
+                    <p>De færdigristede bønner er klar til at blive leveret, kværnet, brygget og serveret på Mokkariet.
+                    </p>
+                </div>
+                <div class="knap-pil">
+                    <button class="nextStepButton">→</button>
+                </div>
             </div>
         </div>
 
-        <h2>Kaffefarmen i Guatemala</h2>
-        <div class="billede_h">
-            <div class="kaffe_tekst_v">
-                <h3>Señor Juares</h3>
-                <p>Manden, der sammen med resten af familien Juares ejer og driver kaffefarmen. Billedet her er fra El
-                    Guatelon-farmens
-                    højest belligende mark, kaldet La Loma (The Hill).</p>
+        <h2 class="h2_rist">Kaffefarmen i Guatemala</h2>
+        <div class="sektion_rist">
+            <div class="billede_h">
+                <div class="kaffe_tekst_v">
+                    <h3>Señor Juares</h3>
+                    <p>Manden, der sammen med resten af familien Juares ejer og driver kaffefarmen. Billedet her er fra
+                        El
+                        Guatelon-farmens
+                        højest belligende mark, kaldet La Loma (The Hill).</p>
+                </div>
+                <img class="img_size" src="img/marie_billeder/juares.jpg" alt="Billede af Juares">
             </div>
-            <img class="img_size" src="img/marie_billeder/juares.jpg" alt="Billede af Juares">
-        </div>
-        <div class="billede_v">
-            <img class="img_size" src="img/marie_billeder/b-træ.jpg" alt="Bourbon-træerne">
-            <div class="kaffe_tekst_h">
-                <h3>Bourbon-træerne</h3>
-                <p>En Juares-medarbejder står og plukker friske kaffebær fra et Bourbon-træ.
-                    Det foregår i 1800 meters højde, to timers kørsel øst for Guatemala City.</p>
+            <div class="billede_v">
+                <img class="img_size" src="img/marie_billeder/b-træ.jpg" alt="Bourbon-træerne">
+                <div class="kaffe_tekst_h">
+                    <h3>Bourbon-træerne</h3>
+                    <p>En Juares-medarbejder står og plukker friske kaffebær fra et Bourbon-træ.
+                        Det foregår i 1800 meters højde, to timers kørsel øst for Guatemala City.</p>
+                </div>
             </div>
         </div>
     </main>
