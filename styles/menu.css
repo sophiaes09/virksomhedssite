@@ -50,6 +50,57 @@ header ul li a:hover {
 }
 /*** header ***/
 
+/**************Menuen**************/
+
+/* Dropdown-menu styling */
+ul#menuList li {
+  position: relative; /* Nødvendig for at placere dropdown korrekt */
+}
+
+ul#menuList li .dropdown {
+  display: none; /* Skjules som standard */
+  position: absolute;
+  top: 100%; /* Dropdown starter under "KONTAKT" */
+  left: 50%; /* Centrering */
+  transform: translateX(-50%); /* Centrer dropdown horisontalt */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Centrer tekst inde i dropdown */
+}
+
+ul#menuList li .dropdown li {
+  margin: 5px 0; /* Lidt mellemrum mellem links */
+}
+
+ul#menuList li .dropdown li a {
+  display: block;
+  text-decoration: none;
+  color: var(--cream); /* Samme farve som øvrige menupunkter */
+  font-family: "Poppins", serif;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+ul#menuList li .dropdown li a:hover {
+  color: var(--d_brown); /* Hover-effekt matcher hovedmenu */
+}
+
+/* Hover for at vise dropdown */
+ul#menuList li:hover .dropdown {
+  display: block;
+}
+
+/* Ændring af burger-menu farve */
+.burger-menu span {
+  background-color: var(--d_brown); /* Farven ændret til mørk brun */
+}
+
+.burger-menu:hover span {
+  background-color: var(--cream); /* Lysere brun ved hover */
+}
+/**************Menuen**************/
+
 /***************main*********/
 .menu_main {
   padding-top: 2rem;

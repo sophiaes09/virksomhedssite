@@ -122,10 +122,16 @@ header ul li a:hover {
 /*******Video********/
 .herovideo {
   width: 100%;
-  height: auto;
+  height: 77vh;
   top: 0;
   left: 0;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .herovideo {
+    height: 50vh; /* På mobilskærme justeres højden til 50% af viewport-højden */
+  }
 }
 
 /** tekst **/
