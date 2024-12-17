@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <meta name="robots" content="noindex">
     <title>Mokkariet</title>
     <link rel="stylesheet" href="styles/mutual_styles.css">
     <link rel="stylesheet" href="styles/bageriet.css">
@@ -26,11 +27,18 @@
             <img src="img/logos/mokkariet_logo_d_brown.png" alt="hover logo" class="hover-image"></a>
 
         <ul id="menuList">
-            <li class="Risteriet"><a href="risteriet.html">RISTERET</a></li>
+            <li class="Risteriet"><a href="risteriet.html">RISTERIET</a></li>
             <li class="Bageriet"><a href="bageriet.html">BAGERIET</a></li>
             <li class="Kaffebaren"><a href="kaffebaren.html">KAFFEBAREN</a></li>
             <li class="Menu"><a href="menu.html">MENU</a></li>
-            <li class="Kontakt"><a href="kontakt.html">KONTAKT</a></li>
+            <li class="Kontakt">
+                <a href="kontakt.html">KONTAKT</a>
+                <ul class="dropdown">
+                    <li><a href="kontakt.html#email">E-mail</a></li>
+                    <li><a href="kontakt.html#telefon">Telefon</a></li>
+                </ul>
+            </li>
+
         </ul>
     </header>
 
@@ -148,6 +156,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>
