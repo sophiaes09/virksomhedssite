@@ -44,7 +44,7 @@ header ul li a:hover {
 }
 /***************************************************************************/
 .header_r {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .headertekst {
@@ -140,7 +140,7 @@ header ul li a:hover {
 }
 @media (max-width: 650px) {
   .tekstbjaelke {
-    margin-top: 4%;
+    margin-top: 2%;
   }
 }
 
@@ -190,4 +190,16 @@ header ul li a:hover {
   .billedejohn {
     margin-bottom: 10%;
   }
+}
+
+.burger-menu span {
+  display: block;
+  height: 3px;
+  background-color: var(--d_brown);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.burger-menu:hover span {
+  background-color: var(--cream);
 }
