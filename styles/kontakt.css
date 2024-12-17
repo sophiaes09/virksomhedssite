@@ -1,0 +1,29 @@
+main {
+  margin-top: 7rem;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.billede_1_kontakt {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.container2 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.h2_kontakt {
+  margin-bottom: 0.5rem;
+}
+
+/****** skærm størrelser ****/
+@media (min-width: 700px) {
+}
