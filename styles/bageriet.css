@@ -102,7 +102,8 @@ header ul li a:hover {
   /* font-size: 2.5ch; */
 }
 .tekstbjaelke {
-  margin-top: 15%;
+  margin-top: 17%;
+  margin-left: 2.5%;
 }
 
 .fradamaskus {
@@ -154,17 +155,18 @@ header ul li a:hover {
 }
 @media (min-width: 1000px) {
   .farvebjaelke {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1.7fr;
   }
   .bollernebillede {
     grid-column: 2/3;
     /* padding-right: 12.2%; */
-    padding-right: 7.2%;
+    padding-right: 7.7%;
     /* aspect-ratio: 1.1/1; */
     object-fit: cover;
   }
   .tekstbjaelke {
-    margin-top: 50%;
+    margin-top: 45%;
+    margin-left: 6.5%;
   }
 }
 @media (min-width: 800px) {
