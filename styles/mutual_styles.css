@@ -101,6 +101,7 @@ header ul li a:hover {
   width: 100%;
   height: auto;
   transition: opacity 0.3s ease;
+  z-index: 1002;
 }
 
 .logo .base-image {
@@ -150,7 +151,6 @@ header ul li a:hover {
   justify-content: center;
   padding-bottom: 1rem;
   margin: 0 auto;
-  padding: 2rem;
   padding-top: 0;
 }
 .knap {
@@ -251,10 +251,9 @@ header ul li a:hover {
 }
 
 .img_tarik {
-  width: 85%;
-  padding-left: 4rem;
-  margin-left: 4rem;
-  margin-bottom: 2rem;
+  width: 75%;
+  margin-left: 3rem;
+  max-width: 380px;
 }
 
 .grid_1_1 {
@@ -262,6 +261,7 @@ header ul li a:hover {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding: 2rem;
+  margin-left: 3rem;
 }
 
 /*******Footer******/
@@ -379,6 +379,10 @@ footer {
     margin-bottom: 0;
   }
 
+  .grid_1_1 {
+    margin-left: 0;
+  }
+
   /*footer*/
   .footer_tekst {
     padding-bottom: 4rem;
@@ -425,9 +429,9 @@ ul#menuList li:hover .dropdown {
 
 /* Ændring af burger-menu farve */
 .burger-menu span {
-  background-color: var(--d_brown); /* Farven ændret til mørk brun */
+  background-color: var(--cream); /* Farven ændret til mørk brun */
 }
 
 .burger-menu:hover span {
-  background-color: var(--cream); /* Lysere brun ved hover */
+  background-color: var(--d_brown); /* Lysere brun ved hover */
 }

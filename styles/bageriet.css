@@ -25,6 +25,7 @@ header ul li a:hover {
   width: 100%;
   height: auto;
   transition: opacity 0.3s ease;
+  z-index: 1002;
 }
 
 .logo .base-image {
