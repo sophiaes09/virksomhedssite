@@ -1,8 +1,3 @@
-document.getElementById("burgerMenu").addEventListener("click", function () {
-  const menu = document.getElementById("menuList");
-  menu.classList.toggle("active");
-});
-
 /****  Til Risteriet knap (fået hjælp fra chatgpt)   *****/
 // JavaScript to handle the step transitions
 // Burger menu funktionalitet
