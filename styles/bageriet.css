@@ -67,16 +67,22 @@ header ul li a:hover {
 }
 .farvebjaelke {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  /* grid-template-columns: 1.5fr 1fr; */
+  grid-template-columns: 1fr 1fr;
   background-color: #b3c5a8;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  /* padding-top: 5%;
+  padding-bottom: 5%; */
+  padding-top: 3%;
+  padding-bottom: 3%;
   margin-top: 5%;
   margin-bottom: 5%;
 }
 .bollernebillede {
   grid-column: 2/3;
-  padding-right: 12.2%;
+  /* padding-right: 12.2%; */
+  padding-right: 9.5%;
+  /* aspect-ratio: 1.1/1; */
+  object-fit: cover;
 }
 .Dejen {
   grid-column: 1/2;
@@ -88,11 +94,12 @@ header ul li a:hover {
 }
 .Bollerne {
   color: var(--d_brown);
-  margin-top: 7%;
-  margin-bottom: 1%;
+  margin-top: -3.5%;
+  margin-bottom: 4%;
   padding-left: 7.9%;
   overflow-wrap: break-word;
   hyphens: auto;
+  /* font-size: 2.5ch; */
 }
 .tekstbjaelke {
   margin-top: 15%;
@@ -134,16 +141,32 @@ header ul li a:hover {
 .billedejohn {
   margin-bottom: 10%;
 }
-.bollernebillede {
-  aspect-ratio: 1.1/1;
-  object-fit: cover;
-}
+
 @media (max-width: 650px) {
   .tekstbjaelke {
-    margin-top: 2%;
+    margin-top: 10%;
   }
 }
-
+@media (max-width: 500px) {
+  .tekstbjaelke {
+    margin-top: 2.8%;
+  }
+}
+@media (min-width: 1000px) {
+  .farvebjaelke {
+    grid-template-columns: 1fr 2fr;
+  }
+  .bollernebillede {
+    grid-column: 2/3;
+    /* padding-right: 12.2%; */
+    padding-right: 7.2%;
+    /* aspect-ratio: 1.1/1; */
+    object-fit: cover;
+  }
+  .tekstbjaelke {
+    margin-top: 50%;
+  }
+}
 @media (min-width: 800px) {
   .fradamaskus {
     display: grid;
