@@ -252,8 +252,8 @@ header ul li a:hover {
 
 .img_tarik {
   width: 75%;
-  margin-left: 3rem;
-  max-width: 380px;
+  margin-left: 30%;
+  max-width: 250px;
 }
 
 .grid_1_1 {
@@ -262,6 +262,23 @@ header ul li a:hover {
   align-items: center;
   padding: 2rem;
   margin-left: 3rem;
+}
+
+/** forside galleri **/
+.forside_galleri {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  grid-template-rows: auto auto auto;
+  margin-bottom: 5rem;
+}
+
+.forside_galleri img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 /*******Footer******/
@@ -388,6 +405,7 @@ footer {
     padding-bottom: 4rem;
   }
 }
+
 /* Dropdown-menu styling */
 ul#menuList li {
   position: relative; /* Nødvendig for at placere dropdown korrekt */
