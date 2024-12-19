@@ -58,7 +58,7 @@ header ul li a:hover {
 
 /***************************************************************************/
 main {
-  margin-top: 6rem;
+  padding-top: 2rem;
 }
 
 .container1 {
@@ -166,7 +166,7 @@ main {
 
 @media (min-width: 1000px) {
   main {
-    margin-top: 10rem;
+    margin-top: 2rem;
   }
   .overskrift1_kaffebaren {
     font-size: 2.5rem;
